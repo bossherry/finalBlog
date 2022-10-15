@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./images/favicon .ico" />
+</head>
+<body>
+    <!-- 首页内容 -->
+    <header>
+        <div id="logo">BLOG</div>
+        <!-- banner -->
+        <ul>
+            <a class="active">主页</a>
+            <a  href="photos.html">学习</a>
+            <a href="mine.html">我的</a> 
+        </ul>
+    </header>
+    <!-- 首页背景元素的铺设 -->
+    <section class="first">
+        <img src="./images/stars.png" alt="" class="stars">
+        <img src="./images/moon.png" alt="" class="moon">
+        <div class="desc">欢迎！</div>
+        <a href="#love"  class="btn  animate__animated animate__zoomInDown">进入博客</a>
+        <img src="./images/back2.png" alt="" class="mountains_behind">
+        <!-- <img src="./images/mountains_front.png" alt="" class="mountains_front"> -->
+    </section>
+    
+    <!-- 第二个页面 -->
+    <section class="second"  id="love">
+    <!-- 页面标题 -->
+    <div class="second_top">
+       热爱
+    </div>
+    <div class="second_text"> 
+         <p>There are countless mediocre people in the world.</p>
+         <p> It is really precious to have our own love and persistence.</p>
+         <p>May we have the courage to break the ice and thank you for meeting.</p>
+         <p>There is no need to hesitate. Tomorrow is just around the corner.</p>
+
+    </div>
+     <!-- swiper -->
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/gallery1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/gallery2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/food1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/running.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/phone2.png" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+<!-- 返回顶部 -->
+   <img src="./images/up.png" onclick="returnTop()" id="to-top" alt="">
+   <!-- 过渡区域 -->
+   <div class="second_temp">
+     <div id="left_text">
+        怀揣热爱 
+     </div>
+     <div id="xiexian"></div>
+   <div id="right_text">
+        奔赴未来
+   </div>
+   </div>
+    </section>
+
+<!-- 第三个部分 -->
+
+    <section class="third" id="future">
+        <div class="grid-container" >
+           <div class="grid-item1 " >未来</div>
+           <div class="grid-item2">
+            <div class="item2-container">
+                 <img class="item-imgs" src="./images/study.jpg" alt="">
+                   <p class="hidden-texts animate__animated  animate__headShake"> &nbsp;考研</p>
+                  <p class="item-texts">
+                    中国非常重视高等教育，无论是找工作还是相亲。对许多人来说，研究生入学考试是消除教育差距的最后机会，因此大多数研究生选择申请一所好学校。
+                  </p>
+                  <button class="item-buttons" onclick="window.open('https://yz.chsi.com.cn/')">
+                      了解更多
+                  </button>
+            </div>
+            </div>
+           <div class="grid-item3">
+            <div class="item2-container">
+                <img class="item-imgs" src="./images/work.jpg" alt="">
+                <p class="hidden-texts animate__animated  animate__headShake"> &nbsp;工作</p>
+                 <p class="item-texts">
+                    大学生努力工作的最佳时期-最好不是在夕阳西下的时候幻想什么,而要在旭日东升的时候即投入工作。所谓天才，那就是假话，勤奋的工作才是实在的。
+                 </p>
+                 <button class="item-buttons" onclick="window.open('https://www.zhaopin.com/')">
+                     了解更多
+                 </button>
+           </div>
+           </div>
+           <div class="grid-item4">
+            <div class="item2-container">
+                <img class="item-imgs" src="./images/out.jpg" alt="">
+                <p class="hidden-texts animate__animated  animate__headShake"> &nbsp;留学</p>
+                 <p class="item-texts">
+                    高校留学项目是指国内高校内开办的一些出国留学项目，学生会先在国内上1-3年的国内课程，再到国外完成其余课程，最终获得国内外的学位证书。
+                 </p>
+                 <button class="item-buttons" onclick="window.open('https://www.csc.edu.cn/')">
+                     了解更多
+                 </button>
+           </div>
+           </div>
+           <div class="grid-item5">
+            <div class="item2-container">
+                <img class="item-imgs" src="./images/business.jpg" alt="">
+                <p class="hidden-texts animate__animated  animate__headShake"> &nbsp;创业</p>
+                 <p class="item-texts">
+                    大学生作为我国的年轻高级知识人群，有着较为丰富的知识储备和相较于其他高级知识分子所欠缺的创造力，是符合在我国十三五规划的创业主要人群。
+                 </p>
+                 <button class="item-buttons" onclick="window.open('http://www.17cye.com.cn/index.html')">
+                     了解更多
+                 </button>
+           </div>
+           </div>
+        </div>
+        <!-- 过渡区域 -->
+          <div>
+            <div class="third_temp">
+                <div id="left3_text">
+                   心怀感恩 
+                </div>
+                <div id="xiexian3"></div>
+              <div id="right3_text">
+                   路在脚下
+              </div>
+              </div>
+          </div>
+    </section>
+    <!-- 最后部分 -->
+    <section class="forth" id="mine">
+        <div class="forth-top">
+          <h1>寄语</h1>
+          <div class="text-container">
+            <p>飞扬的青春用热情谱写着年华，瑰丽的岁月用真心镌刻着友谊，璀璨的人生用执着装点着未来。</p>
+            <p>祝心想事成，前程似锦！</p>
+          </div>
+          
+        </div>
+        <!-- grid布局 -->
+        <div class="forth-grid">
+           <div class="grid-left"><img src="./images/forthback.jpg" alt="">
+           </div>
+           <div class="grid-right">
+            <h2>我们是谁：</h2>
+            <p>我们诞生在这个世界是被迫的，这是最糟糕的事实。一种理想主义的人生观是：生命的长度无需受制于肉体自然的衰败，它应该是受你的心灵、你的快乐的需要而去自主选择。
+                人们总爱追问人生的意义，其实人生本无所谓意义，因为存在先于本质，本质之前的存在是禁绝思考的。人生的无意义赋予了人的自由，倘若人生有一个注定的意义，那么人人都如同一具机器。
+            </p>
+            <p>我愿意以轻对重，以轻对累。对我自己，无论处于佳境还是不幸，我都能寻找到自我轻松，既不受名利之累，也不为劣境所苦。对周围群体，当我出现在他们面前，能带给他们所需要的轻松，从而增添或缓解他们生活中的喜悦和痛楚。</p>
+            <button  onclick="window.open('https://www.suse.edu.cn/')" >更多</button>
+           </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+            <p>Copyright © 2022 hj. Designedby  <a href="https://github.com/bossherry?tab=repositories">bossherry</a></p>
+        </div>
+        </div>
+    </section>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
